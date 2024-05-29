@@ -11,14 +11,25 @@ import {
   BellIcon,
   HomeIcon,
   XMarkIcon,
+  AcademicCapIcon,
 } from "@heroicons/react/24/outline";
 import { useState } from "react";
 import { twJoin } from "tailwind-merge";
 import ProfileDropdown from "./ProfileDropdown";
 
 const navigation = [
-  { name: "Dashboard", href: "#", icon: HomeIcon, current: true },
-  { name: "Teste", href: "#", icon: BellIcon, current: false },
+  {
+    name: "Dashboard",
+    href: "/dashboard/home",
+    icon: HomeIcon,
+    current: true,
+  },
+  {
+    name: "Courses",
+    href: "/dashboard/courses",
+    icon: AcademicCapIcon,
+    current: false,
+  },
 ];
 
 type LayoutProps = {
